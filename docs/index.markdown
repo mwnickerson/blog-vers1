@@ -4,3 +4,8 @@
 
 layout: home
 ---
+
+# Hello world
+## this is a test to see how to get my index live
+
+### i like writing in markdown
