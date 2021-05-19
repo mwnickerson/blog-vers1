@@ -29,7 +29,7 @@ twitter_username: mwnsec
 github_username:  mwnickerson
 
 # Build settings
-theme: jekyll-theme-slate
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
 
