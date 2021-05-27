@@ -5,9 +5,9 @@ date:   2021-05-19 19:18
 categories: journal
 ---
 
-# How I Got here and Where I am Going
+## How I Got here and Where I am Going
 
-## Reaching the Trailhead
+### Reaching the Trailhead
 I have been attmepting to write this first post for quite some time now.
 Its been about about three weeks since my time at Comcast has come to a close. To be honest it was upsetting leaving the company I have worked so hard and built so much over the last 6 years. But looking back on all I did, I am quite proud. I learned so many things and overcame many challenges. I felt as though I was very good at what I was doing. I was usually the one my team and other co workers would come to for help. I was always being assigned special projects. Over the course of 6 years I achieved ELITE (top 2%) twice. In the end, Comcast was a great starting point for me, and it helped me realize some things about myself.
 
@@ -21,7 +21,7 @@ I knew I wanted to go into tech. For years i have heard the media say to the une
 
 Anyway, as I learned that cybersecurity was for me I have begun researching and compiling what I want and most importantly how to get it. Over the past couple of weeks I have completely dedicated myself to preparing for a career in cyber security. I have completed the TryHackMe Defender LEarning Path and TCM's Practical Ethical Hacking course and am working on more courses as we speak! With the assistance of friends and family (big shout out to my sister Stephanie!), I have spoken with many voices from within the industry and have gained some valuable insight. I feel as though I havea pretty good "trail map" of my trek onwards.
 
-## Venturing Forward
+### Venturing Forward
 
 In the coming weeks, I am going to be starting a class for prepping for Security+ as well as a class to prep for the CEH cert. I am very excited as these are being held at Miami Dade College. MDC has a pretty great program for Cyber and even has a cyber range that I can practice on. I am amped for these classes to start in the next month or so. I cant wait to build on everything I have learned so far and learn many new things.
 

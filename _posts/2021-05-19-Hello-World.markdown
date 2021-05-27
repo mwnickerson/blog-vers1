@@ -5,7 +5,7 @@ date:   2021-05-19 19:18
 categories: hello world
 ---
 
-# My plans for this place
+## My plans for this place
 
 I am doing this blog to give back to the cyber security community in my own way.
 
@@ -22,4 +22,4 @@ I also hope to share a lot of the photos I have taken along the way.
 I hope you enjoy what you find here!
 
 ## Some more info on the blog
-So this blog has been super delayed. Getting jekyll and github pages working on an M1 macbook has been a royal bitch, but i got it working eventually. I also face the issue where looking at a blank website makes me want to format it and make it look nice before i write. I get the feeling its more of a procastination technique than OCD. But now I have words on the page and the blog has begun. I am hoping this will be a place where I can detail my journey as well as give back to the community a little bit. 
+So this blog has been super delayed. Getting jekyll and github pages working on an M1 macbook has been a royal bitch, but i got it working eventually. I also face the issue where looking at a blank website makes me want to format it and make it look nice before i write. I get the feeling its more of a procastination technique than OCD. But now I have words on the page and the blog has begun. I am hoping this will be a place where I can detail my journey as well as give back to the community a little bit.
