@@ -4,7 +4,7 @@ title:  "Try Harder"
 date:   2021-05-27 19:18
 categories: blog
 ---
-## Try Harder
+## A new attitude for a new career
 
 I came across this saying and the story behind it, while reading more about CS. When I read the story about its origin it really clicked with me.
 
