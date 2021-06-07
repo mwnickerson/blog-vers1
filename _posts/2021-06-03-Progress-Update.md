@@ -6,7 +6,7 @@ categories: Technical, progress, learning
 ---
 ## Where I am at in my training process
 
-So allegedly this is supposed to be a technical blog, yet here i am and haven't written much about my actual progress towards working in Cyber Security.
+So this is supposed to be a technical blog, yet here i am and haven't written much about my actual progress towards working in Cyber Security.
 
 I am sure you have had enough of the soppy-ass emotional and feeling and thoughts writing. So for the rest of this post I will refrain and stick to cyber stuff.
 
