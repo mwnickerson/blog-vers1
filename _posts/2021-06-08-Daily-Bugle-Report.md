@@ -23,22 +23,32 @@ and finally from user to root through misconfigured user permissions.</p1>
 ## Reconaissance
 
 <p3>I started my attack with a "lite nmap" and enumeration nmap scan.
+
 **nmap lite**
+
 ![Nmap Lite Scan](/assets/images/dailybugle/mnmaplite.png)
+
 **nmap enum**
+
 [Namp Enum Scan](/assets/images/dailybugle/nmapenum.png)
 There are three ports open: 22, 80, 3306
 </p3>
+
 **browser view**
+
 ![broswer view of website](/assets/images/browserview.png)
 *this reveals the answer to the first question!*
+
 <p4>I see the webserver is open on 80 and there is an sql server running on 3306.
+
 That most likely means I am going to be going up against a web server.
 In order to get a better idea of what the website is,
- I visit it in my browser as well as begin a nikto scan in the background.</p4>
+I visit it in my browser as well as begin a nikto scan in the background.</p4>
 
 **nikto**
+
 ![nikto scan](assets/images/nikto.png)
+
 <p5>The nikto scan comes completes.
 It  enumerates some directories that are located within the web server as well.
 The one that catches my eye is the /administrator/.
