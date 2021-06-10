@@ -26,7 +26,7 @@ I started my attack with a "lite nmap" and enumeration nmap scan.
 
 **nmap lite**
 
-<img src="/assets/images/dailybugle/nmaplite.png"
+<img src="/assets/images/dailybugle/nmaplite.png">
 
 **nmap enum**
 
@@ -48,7 +48,7 @@ I visit it in my browser as well as begin a nikto scan in the background.
 
 **nikto**
 
-<img src="/assets/images/dailybugle/nikto.png"
+<img src="/assets/images/dailybugle/nikto.png">
 
 The nikto scan comes completes.
 It  enumerates some directories that are located within the web server as well.
@@ -91,7 +91,8 @@ in order to obtain any user information inside
 
 `sqlmap -u "http://10.10.134.118/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla -T '#_users' -C id,name,username,email,password,usertype,block,sendEmail,registerDate,lastvisitDate,activation,params --dump `
 
-<img src="/assets/images/dailybugle/sqlmap__users.png">
+<img src="/assets/images/dailybugle/sqlmap__usersdump.png">
+
 I was able to dump the user info including the hash for the super user.
 
 I am able to take the hash for the user and run it through hashcat and generate the user password.
@@ -100,13 +101,13 @@ I can then take these credentials and login to the admin panel I found earlier.
 <img src="/assets/images/dailybugle/hashcat.png">
 
 ## Admin Panel and Initial Shell
-<img src="assets/images/dailybugle/admin-panel.png">
+<img src="/assets/images/dailybugle/admin-panel.png">
 
 I am inside the admin panel and have found access to the editing the templates for the index page.
 I erase the current template and replace it with a reverse shell script for php from [Pentest Monkey Github](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php).
 I open a listener on my machine and visit the index and my shell connects.
 
-<img src="/assets/images/dailybugle/initiallllshell.png">
+<img src="/assets/images/dailybugle/initialshell.png">
 
 ## Privilege Escalation
 I am in as a service account for the apache web server.
@@ -133,3 +134,8 @@ I enter the appropriate script to install a plugin on yum that allows me to run 
 and I have it rooted.
 <img src="/assets/images/dailybugle/root.png">
 **rooted**
+
+
+AHHH finally got my first write-up done.
+More to come soon!
+and i got images figured out!
