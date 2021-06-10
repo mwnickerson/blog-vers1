@@ -4,7 +4,7 @@ title: Daily Bugle writeup
 date: June 8, 2021
 categories: Vuln Report
 ---
-## A vuln report for the TryHackMe Daily Bugle Room
+## A Vuln report for the TryHackMe Daily Bugle Room
 
 # High Level Summary
 
@@ -36,7 +36,8 @@ There are three ports open: 22, 80, 3306
 
 **browser view**
 
-<img src="/assets/images/browserview.png">
+<img src="/assets/images/dailybugle/browserview.png">
+
 *this reveals the answer to the first question!*
 
 I see the webserver is open on 80 and there is an sql server running on 3306.
@@ -47,7 +48,7 @@ I visit it in my browser as well as begin a nikto scan in the background.
 
 **nikto**
 
-<img src="/assets/images/nikto.png"
+<img src="/assets/images/dailybugle/nikto.png"
 
 The nikto scan comes completes.
 It  enumerates some directories that are located within the web server as well.
@@ -91,10 +92,10 @@ in order to obtain any user information inside
 `sqlmap -u "http://10.10.134.118/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla -T '#_users' -C id,name,username,email,password,usertype,block,sendEmail,registerDate,lastvisitDate,activation,params --dump `
 
 <img src="/assets/images/dailybugle/sqlmap__users.png">
-I was able to dump the user info including the hash for the super user.</p9>
+I was able to dump the user info including the hash for the super user.
 
-<p10>I am able to take the hash for the user and run it through hashcat and generate the user password.
-I can then take these credentials and login to the admin panel I found earlier.</p10>
+I am able to take the hash for the user and run it through hashcat and generate the user password.
+I can then take these credentials and login to the admin panel I found earlier.
 **hashcat**
 <img src="/assets/images/dailybugle/hashcat.png">
 
@@ -112,10 +113,12 @@ I am in as a service account for the apache web server.
 Unfortunately this account is limited in what I can do.
 I run the Linpeas script to enumerate and find a way to escalate my privileges up to root.
 I navigate to the /tmp/ drive and open a simple python server on my attacking machine and download linpeas with the shell on my target.
-Once its on the machine, I run it.</p12>
+Once its on the machine, I run it.
+
 <img src="/assets/images/dailybugle/linpeas.png">
+
 After running the linpeas enumeration script I found that there is a password stored in plaintext in a configuration file.
-This password is associated with the user jjameson.
+This password is associated with the user "jjameson".
 I use these to login to his account and work on further escalating my privileges on the machine.
 
 ## Root
@@ -126,7 +129,7 @@ I use these to login to his account and work on further escalating my privileges
 ![gtfobinsyum](/assets/images/dailybugle/gtfobinsyum.png)
 
 I find that I am able to use yum as a super user.
-I enter the approproiate script to install a plugin on yum that allows me to run a bash shell as root.
+I enter the appropriate script to install a plugin on yum that allows me to run a bash shell as root.
 and I have it rooted.
-img src="/assets/images/dailybugle/root.png">
+<img src="/assets/images/dailybugle/root.png">
 **rooted**
