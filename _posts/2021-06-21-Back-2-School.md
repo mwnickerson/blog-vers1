@@ -5,8 +5,9 @@ Date: June 21, 2021
 categories: blog
 ---
 ## You could not live with your own failure? Where did that bring you?
+
 <img src="/assets/images/memes/thanos.png">
-# Back to School
+## Back to School
 <img src= "/assets/images/memes/back2school.gif">
 
 I started my first class today.
