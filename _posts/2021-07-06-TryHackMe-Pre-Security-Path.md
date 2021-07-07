@@ -1,6 +1,7 @@
 ---
 layout: post
 Title: A Thank You To TryHackMe
+Author: Matthew
 Date: July 6, 2021
 categories: Learning, Review
 ---
